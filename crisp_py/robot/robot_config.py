@@ -43,7 +43,10 @@ class RobotConfig:
 
     default_controller: str = "cartesian_impedance_controller"
     cartesian_impedance_controller_name: str = "cartesian_impedance_controller"
+    cartesian_admittance_controller_name: str = "cartesian_admittance_controller"
     joint_trajectory_controller_name: str = "joint_impedance_controller"
+
+    target_admittance_stiffness_topic: str = "target_admittance_stiffness"
 
     target_pose_topic: str = "target_pose"
     target_joint_topic: str = "target_joint"
@@ -62,6 +65,7 @@ class RobotConfig:
     tf_retrieve_rate: float = 50.0
 
     use_prefix: bool = False
+    use_admittance_controller: bool = False
 
     def num_joints(self) -> int:
         """Returns the number of joints in the robot."""
