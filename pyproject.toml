@@ -3,7 +3,6 @@ name = "crisp-python"
 version = "3.6.0"
 description = "Simple python interface to control robots that use crisp_controllers and other ROS2 components."
 readme = "README.md"
-license-files = ["LICENSE.md"]
 requires-python = ">=3.11"
 dependencies = [
     "scipy",
@@ -19,6 +18,7 @@ include = ["crisp_py*"]
 
 [tool.setuptools]
 include-package-data = true
+license-files = ["LICENSE.md"]
 
 [tool.ruff]
 exclude = [
