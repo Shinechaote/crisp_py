@@ -19,6 +19,7 @@ include = ["crisp_py*"]
 
 [tool.setuptools]
 include-package-data = true
+license-files = ["LICENSE.md"]
 
 [tool.ruff]
 exclude = [
